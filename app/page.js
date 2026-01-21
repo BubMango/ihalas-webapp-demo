@@ -8,7 +8,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-indigo-600">TailwindDemo</h1>
+              <h1 className="text-2xl font-bold text-indigo-600">TailwindDemo-Ihalas</h1>
             </div>
             <div className="hidden md:flex space-x-8">
               <a href="#buttons" className="text-gray-700 hover:text-indigo-600 transition">Buttons</a>
@@ -30,7 +30,7 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-5xl font-extrabold text-gray-900 mb-4">
-            Tailwind CSS Components
+            How to Use Tailwind CSS Components
           </h1>
           <p className="text-xl text-gray-600 mb-8">
             A showcase of beautiful, responsive components built with Tailwind CSS, with live examples and code snippets.
