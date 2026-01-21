@@ -15,6 +15,7 @@ export default function Home() {
               <a href="#colors" className="text-gray-700 hover:text-indigo-600 transition">Colors</a>
               <a href="#layouts" className="text-gray-700 hover:text-indigo-600 transition">Layouts</a>
               <a href="#text" className="text-gray-700 hover:text-indigo-600 transition">Typography</a>
+              <a href="#images" className="text-gray-700 hover:text-indigo-600 transition">Images</a>
             </div>
             <button className="md:hidden">
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -32,9 +33,54 @@ export default function Home() {
             Tailwind CSS Components
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            A showcase of beautiful, responsive components built with Tailwind CSS
+            A showcase of beautiful, responsive components built with Tailwind CSS, with live examples and code snippets.
           </p>
         </div>
+
+        {/* Description Section */}
+        <section id="description" className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">What is Tailwind CSS?</h2>
+          <p className="text-lg text-gray-700">
+            Tailwind CSS is a utility-first CSS framework that lets you design modern websites quickly and efficiently without writing a lot of custom CSS.
+            Instead of creating custom classes, you compose designs directly in your HTML using utility classes.
+          </p>
+          <pre className="bg-gray-100 p-4 rounded-lg mt-4 overflow-x-auto">
+            <code className="text-sm text-gray-800">
+{`<div class="bg-blue-100 p-4 rounded-lg shadow">Hello Tailwind!</div>`}
+            </code>
+          </pre>
+        </section>
+
+        {/* Why Section */}
+        <section id="why" className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Use Tailwind CSS?</h2>
+          <p className="text-lg text-gray-700">
+            Tailwind helps you rapidly prototype websites, maintain consistent design, and eliminate long CSS files by using utility classes.
+          </p>
+          <pre className="bg-gray-100 p-4 rounded-lg mt-4 overflow-x-auto">
+            <code className="text-sm text-gray-800">
+{`<button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+  Click Me
+</button>`}
+            </code>
+          </pre>
+        </section>
+
+        {/* Buttons Intro */}
+        <section id="buttons-intro" className="mb-6">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">Using Tailwind CSS Buttons</h2>
+          <p className="text-lg text-gray-700">
+            Buttons in Tailwind CSS are created using utility classes for background, text, padding, border, and hover effects.
+            You can also apply gradients, shadows, and rounded corners for more visual impact.
+          </p>
+          <pre className="bg-gray-100 p-4 rounded-lg mt-4 overflow-x-auto">
+            <code className="text-sm text-gray-800">
+{`<button class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">
+  Success Button
+</button>`}
+            </code>
+          </pre>
+        </section>
 
         {/* Buttons Section */}
         <section id="buttons" className="mb-16">
@@ -63,37 +109,47 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Colors Intro */}
+        <section id="colors-intro" className="mb-6">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">Color Palette</h2>
+          <p className="text-lg text-gray-700">
+            Tailwind provides hundreds of predefined colors for backgrounds, text, borders, and more. You can also add custom colors via the config file.
+          </p>
+          <pre className="bg-gray-100 p-4 rounded-lg mt-4 overflow-x-auto">
+            <code className="text-sm text-gray-800">
+{`<div class="w-24 h-24 bg-red-500 rounded-lg"></div>
+<div class="w-24 h-24 bg-blue-500 rounded-lg"></div>`}
+            </code>
+          </pre>
+        </section>
+
         {/* Colors Section */}
         <section id="colors" className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Color Palette</h2>
           <div className="bg-white rounded-lg shadow-md p-8">
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-              <div className="text-center">
-                <div className="w-full h-24 bg-red-500 rounded-lg mb-2"></div>
-                <p className="text-sm font-medium">Red</p>
-              </div>
-              <div className="text-center">
-                <div className="w-full h-24 bg-blue-500 rounded-lg mb-2"></div>
-                <p className="text-sm font-medium">Blue</p>
-              </div>
-              <div className="text-center">
-                <div className="w-full h-24 bg-green-500 rounded-lg mb-2"></div>
-                <p className="text-sm font-medium">Green</p>
-              </div>
-              <div className="text-center">
-                <div className="w-full h-24 bg-yellow-500 rounded-lg mb-2"></div>
-                <p className="text-sm font-medium">Yellow</p>
-              </div>
-              <div className="text-center">
-                <div className="w-full h-24 bg-purple-500 rounded-lg mb-2"></div>
-                <p className="text-sm font-medium">Purple</p>
-              </div>
-              <div className="text-center">
-                <div className="w-full h-24 bg-pink-500 rounded-lg mb-2"></div>
-                <p className="text-sm font-medium">Pink</p>
-              </div>
+              {["red", "blue", "green", "yellow", "purple", "pink"].map((color) => (
+                <div className="text-center" key={color}>
+                  <div className={`w-full h-24 bg-${color}-500 rounded-lg mb-2`}></div>
+                  <p className="text-sm font-medium capitalize">{color}</p>
+                </div>
+              ))}
             </div>
           </div>
+        </section>
+
+        {/* Typography Intro */}
+        <section id="text-intro" className="mb-6">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">Working with Text</h2>
+          <p className="text-lg text-gray-700">
+            Tailwind offers utilities for font size, weight, style, line-height, and color. Combine them to quickly create headings, paragraphs, and emphasized text.
+          </p>
+          <pre className="bg-gray-100 p-4 rounded-lg mt-4 overflow-x-auto">
+            <code className="text-sm text-gray-800">
+{`<h1 class="text-5xl font-bold text-gray-900">Heading 1</h1>
+<p class="text-base text-gray-600">This is a paragraph.</p>`}
+            </code>
+          </pre>
         </section>
 
         {/* Typography Section */}
@@ -112,21 +168,37 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Layouts Intro */}
+        <section id="layouts-intro" className="mb-6">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">Layout Utilities</h2>
+          <p className="text-lg text-gray-700">
+            Tailwind provides utilities for flexbox, grid, spacing, alignment, and responsive layouts. Combine classes to quickly structure your content.
+          </p>
+          <pre className="bg-gray-100 p-4 rounded-lg mt-4 overflow-x-auto">
+            <code className="text-sm text-gray-800">
+{`<div class="grid grid-cols-3 gap-4">
+  <div class="bg-blue-500 p-4">Item 1</div>
+  <div class="bg-green-500 p-4">Item 2</div>
+  <div class="bg-red-500 p-4">Item 3</div>
+</div>`}
+            </code>
+          </pre>
+        </section>
+
         {/* Layouts Section */}
         <section id="layouts" className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Layout Examples</h2>
-          
           {/* Grid Layout */}
           <div className="bg-white rounded-lg shadow-md p-8 mb-8">
             <h3 className="text-xl font-bold mb-4">Grid Layout</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="bg-gradient-to-br from-blue-400 to-blue-600 text-white p-6 rounded-lg">
                 <h4 className="font-bold text-lg mb-2">Card 1</h4>
-                <p>This is a card in a responsive grid layout.</p>
+                <p>Responsive grid adjusts automatically.</p>
               </div>
               <div className="bg-gradient-to-br from-green-400 to-green-600 text-white p-6 rounded-lg">
                 <h4 className="font-bold text-lg mb-2">Card 2</h4>
-                <p>Grid automatically adjusts to screen size.</p>
+                <p>Works across devices.</p>
               </div>
               <div className="bg-gradient-to-br from-purple-400 to-purple-600 text-white p-6 rounded-lg">
                 <h4 className="font-bold text-lg mb-2">Card 3</h4>
@@ -147,9 +219,18 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Image Section */}
-        <section className="mb-16">
+        {/* Images Section */}
+        <section id="images" className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Images</h2>
+          <p className="text-lg text-gray-700 mb-4">
+            Tailwind makes it easy to style images with rounding, shadows, and responsive sizing.
+          </p>
+          <pre className="bg-gray-100 p-4 rounded-lg mt-4 overflow-x-auto mb-6">
+            <code className="text-sm text-gray-800">
+{`<img class="w-full rounded-lg shadow-md" src="image.jpg" alt="Example"/>
+<img class="w-full rounded-full shadow-md" src="image.jpg" alt="Example"/>`}
+            </code>
+          </pre>
           <div className="bg-white rounded-lg shadow-md p-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div>
