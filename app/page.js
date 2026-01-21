@@ -235,7 +235,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div>
                 <img 
-                  src="https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Image+1" 
+                  src="https://media.istockphoto.com/id/1142665470/photo/a-lilac-british-cat-with-a-blue-coat-looking-up-the-cat-opened-his-mouth-with-a-mad-look-the.jpg?s=612x612&w=0&k=20&c=taxLHL2AxrFzmSaGUqIk1jYNQ19LXvg3fxxFly0RHyY=" 
                   alt="Placeholder" 
                   className="w-full rounded-lg shadow-md"
                 />
@@ -243,7 +243,7 @@ export default function Home() {
               </div>
               <div>
                 <img 
-                  src="https://via.placeholder.com/400x300/10B981/FFFFFF?text=Image+2" 
+                  src="https://media.istockphoto.com/id/1142665470/photo/a-lilac-british-cat-with-a-blue-coat-looking-up-the-cat-opened-his-mouth-with-a-mad-look-the.jpg?s=612x612&w=0&k=20&c=taxLHL2AxrFzmSaGUqIk1jYNQ19LXvg3fxxFly0RHyY=" 
                   alt="Placeholder" 
                   className="w-full rounded-full shadow-md"
                 />
@@ -251,7 +251,7 @@ export default function Home() {
               </div>
               <div>
                 <img 
-                  src="https://via.placeholder.com/400x300/8B5CF6/FFFFFF?text=Image+3" 
+                  src="https://media.istockphoto.com/id/1142665470/photo/a-lilac-british-cat-with-a-blue-coat-looking-up-the-cat-opened-his-mouth-with-a-mad-look-the.jpg?s=612x612&w=0&k=20&c=taxLHL2AxrFzmSaGUqIk1jYNQ19LXvg3fxxFly0RHyY=" 
                   alt="Placeholder" 
                   className="w-full shadow-2xl"
                 />
